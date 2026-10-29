@@ -1,0 +1,8 @@
+# Simple-Intent 运行依赖（Windows 上只跑 Web 控制台 / 仿真模式时够用）
+fastapi>=0.110
+uvicorn>=0.27
+requests>=2.28
+
+# 真实网络模式（Linux / WSL，需额外安装；Windows 不支持 Mininet）
+# ryu>=4.34
+# mininet>=2.3      # 建议 apt install mininet
