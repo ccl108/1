@@ -1,8 +1,0 @@
-{
-  "port": 5000,
-  "refresh_interval": 2000,
-  "ddos_threshold": 500,
-  "port_scan_threshold": 50,
-  "syn_flood_threshold": 100,
-  "udp_flood_threshold": 200
-}
