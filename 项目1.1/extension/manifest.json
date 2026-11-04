@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "AI-NIDS 本地流量监控",
+  "version": "1.0.0",
+  "description": "控制本机 AI-NIDS 流量模拟和网卡捕获",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "http://127.0.0.1:5000/*",
+    "http://localhost:5000/*"
+  ]
+}

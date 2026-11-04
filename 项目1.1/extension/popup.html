@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>AI-NIDS</title>
+  <style>
+    body { width: 310px; margin: 0; padding: 16px; color: #eef; background: #15152a; font: 14px Segoe UI, sans-serif; }
+    h2 { margin: 0 0 12px; font-size: 18px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .metric { padding: 8px; border: 1px solid #353550; border-radius: 6px; }
+    .label { color: #999; font-size: 11px; } .value { font-size: 20px; }
+    button, select { width: 100%; padding: 8px; margin-top: 8px; color: #eef; background: #29294a; border: 1px solid #505078; border-radius: 5px; }
+    #error { color: #ff7777; min-height: 18px; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h2>🛡️ AI-NIDS</h2>
+  <div class="grid">
+    <div class="metric"><div class="label">QPS</div><div class="value" id="qps">--</div></div>
+    <div class="metric"><div class="label">数据包</div><div class="value" id="packets">--</div></div>
+    <div class="metric"><div class="label">端口</div><div class="value" id="ports">--</div></div>
+    <div class="metric"><div class="label">状态</div><div class="value" id="status">--</div></div>
+  </div>
+  <select id="interfaces"><option value="">默认网卡</option></select>
+  <button id="capture">网卡捕获（自动启动）</button>
+  <button id="simulate">开始模拟流量</button>
+  <button id="stop">停止</button>
+  <button id="dashboard">打开完整面板</button>
+  <div id="error"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
